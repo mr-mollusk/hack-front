@@ -1,0 +1,1 @@
+export { MockCard } from './mockCard';

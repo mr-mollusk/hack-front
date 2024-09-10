@@ -1,0 +1,1 @@
+export { MockPage } from './mock';
