@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ChakraProvider>
       <Provider store={store}>
-        <RouterProvider router={router} />;
+        <RouterProvider router={router} />
       </Provider>
     </ChakraProvider>
   </StrictMode>
