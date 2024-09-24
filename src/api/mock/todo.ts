@@ -1,5 +1,5 @@
-import { mockInstance } from '../instances/mock';
+import { mockInstance } from "../instances/mock";
 
 export const getMockTodoes = async () => {
-  return await mockInstance.get('/todo.json');
+  return await mockInstance.get("/todo.json");
 };
