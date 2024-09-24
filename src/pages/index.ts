@@ -1,2 +1,2 @@
-export { MockPage } from './mock';
-export { RegisterPage } from './register';
+export { MockPage } from "./mock";
+export { RegisterPage } from "./register";

@@ -1,7 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { MockState } from './mock.types';
-import { fetchMockTodoes } from './mock.actions';
-import { isPendingAction, isRejectedAction } from '../../@types';
+import { createSlice } from "@reduxjs/toolkit";
+import { MockState } from "./mock.types";
+import { fetchMockTodoes } from "./mock.actions";
+import { isPendingAction, isRejectedAction } from "../../@types";
 
 const initialState = {
   todoes: [],
@@ -10,15 +10,15 @@ const initialState = {
 } satisfies MockState as MockState;
 
 const mockSlice = createSlice({
-  name: 'mock',
+  name: "mock",
   initialState,
   reducers: {},
-  extraReducers: builder => {
+  extraReducers: (builder) => {
     builder.addCase(fetchMockTodoes.fulfilled, (state, action) => {
       state.loading = false;
       state.todoes = action.payload;
     });
-    builder.addMatcher(isPendingAction, state => {
+    builder.addMatcher(isPendingAction, (state) => {
       state.loading = true;
     });
     builder.addMatcher(isRejectedAction, (state, action) => {

@@ -1,2 +1,2 @@
-export { Loader } from './loader';
-export * from './eyeIcon';
+export { Loader } from "./loader";
+export * from "./auth/registerImageBox";

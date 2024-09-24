@@ -1,3 +1,3 @@
-import { lazy } from 'react'
+import { lazy } from "react";
 
-export const MockPage = lazy(() => import('./mock.page.js'));
+export const MockPage = lazy(() => import("./mock.page.js"));

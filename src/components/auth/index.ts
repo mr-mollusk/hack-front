@@ -1,0 +1,1 @@
+export { RegisterImageBox } from "./registerImageBox";

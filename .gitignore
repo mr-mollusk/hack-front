@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript environment
+tsconfig.node.json
+tsconfig.node.tsbuildinfo
