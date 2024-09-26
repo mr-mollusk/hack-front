@@ -1,0 +1,1 @@
+export { RegistrationBox } from "./registrationBox";

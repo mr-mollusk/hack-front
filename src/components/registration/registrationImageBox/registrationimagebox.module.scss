@@ -1,0 +1,31 @@
+.imageBox {
+   min-width: 49%;
+   border-radius: 0.5rem;
+   position: relative;
+   display: none;
+   @media (min-width: 768px) {
+      display: flex;
+   }
+   .image {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+      object-fit: fill;
+   }
+   .header {
+      position: absolute;
+      top: 83%;
+      left: 5%;
+      color: white;
+      width: 90%;
+      font-size: 1rem;
+   }
+   .subheader {
+      position: absolute;
+      top: 88%;
+      left: 5%;
+      color: grey;
+      width: 80%;
+      font-size: 0.9rem;
+   }
+}
