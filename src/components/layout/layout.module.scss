@@ -1,0 +1,24 @@
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+    grid-template-rows: 5rem 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header "
+        "sidebar content "
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    overflow: auto;
+}

@@ -4,6 +4,7 @@ import { Loader } from '../../components';
 import { Box } from '@chakra-ui/react';
 import { MockCard } from './mockCard';
 import { useAppSelector, useAppDispatch } from '../../hooks';
+import { Layout } from '../../components/layout';
 
 const MockPage = () => {
   const dispatch = useAppDispatch();
@@ -16,12 +17,14 @@ const MockPage = () => {
   if (loading) return <Loader />;
 
   return (
-    <Box p='1rem' w='100%'>
-      {todoes.map(({ id, ...mockCardProps }) => (
-        <MockCard key={id} {...mockCardProps} />
-      ))}
-    </Box>
+    <Layout>
+      <Box p='1rem' w='100%'>
+        {todoes.map(({ id, ...mockCardProps }) => (
+          <MockCard key={id} {...mockCardProps} />
+        ))}
+      </Box>
+    </Layout>
+
   );
 };
-
 export default MockPage;
